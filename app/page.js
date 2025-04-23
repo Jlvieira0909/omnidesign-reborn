@@ -1,95 +1,56 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "./Home.css";
+import Aurora from "./components/AuroraBG/Aurora.jsx";
+import NavBar from "./components/NavBar/NavBar";
+import HomeCard from "./components/HomeCard/HomeCard";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="MenuContainer">
+      <div className="BGContainer">
+        <Aurora
+          colorStops={["#22223C", "#0044ff", "#22223C"]}
+          blend={1}
+          amplitude={0.9}
+          speed={0.8}
         />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      </div>
+      <div className="MenuContent">
+        <NavBar />
+        <div className="ImageCarouselWrapper"></div>
+        <div className="MagicImageWrapper">
+          <h1 className="MagicImageTitle">
+            30 anos desenvolvendo soluções inteligentes e eficientes em Design
+            Gráfico.
+          </h1>
+          <div className="MagicImage"></div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="InfoCardsWrapper">
+          <HomeCard
+            CardTitle="Quem Somos"
+            CardText="Conheça nossa História e Perfil Profissional"
+            CardLink="/aboutUs"
+            CardLinkText="Descubra mais"
+            CardTextLink="/aboutUs"
+            CardImageSrc="/Images/GalleryImages/GalleryImage01.png"
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <HomeCard
+            CardTitle="Nossos Projetos"
+            CardText="Alguns de nossos projetos e conceitos na área de Design Gráfico"
+            CardLink="/projects"
+            CardLinkText="Descubra Mais"
+            CardTextLink="/projects"
+            CardImageSrc="/Images/GalleryImages/GalleryImage02.png"
           />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <HomeCard
+            CardTitle="Contato"
+            CardText="Estamos prontos para atender suas necessidades e expectativas em Design Gráfico"
+            CardLink="/contact"
+            CardLinkText="Descubra Mais"
+            CardTextLink="/contact"
+            CardImageSrc="/Images/GalleryImages/GalleryImage18.png"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </div>
     </div>
   );
 }

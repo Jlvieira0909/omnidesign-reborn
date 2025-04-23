@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.ContactContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.BGContainer {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  opacity: 80%;
+  z-index: 1;
+}
+
+.ContactContent {
+  z-index: 2;
+}
+
+.ContactCardContainer {
+  background: #101112;
+  width: 80vw;
+  height: 70vh;
+  padding: 4%;
+  box-shadow: 16px 16px 16px 0px rgba(30, 41, 51, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.LabelNameContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.NameWrapper {
+  display: flex;
+  gap: 1%;
+  font-size: 2em;
+}
+
+.FirstName {
+  font-weight: 900;
+}
+
+.SurName {
+  font-weight: 100;
+}
+
+.ActingArea {
+  font-weight: 100;
+  color: #98a1ab;
+  font-size: 2.5em;
+}
+
+.ContactsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.InfosWrapper {
+  width: 60%;
+}
+
+.ContactRow {
+  height: 5vh;
+}
+
+.ContactLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+  width: 50%;
+  cursor: default;
+}
+
+.ContactLabel:hover {
+  color: #ffffff;
+}
+
+.ContactLabel {
+  font-size: 2em;
+  color: #98a1ab;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.PixelCard {
+  border-radius: 2px !important;
+  width: 30% !important;
+  height: 100% !important;
+}
+
+.PixelCardImageBefore {
+  position: absolute;
+}
+
+.PixelCardImageAfter {
+  position: absolute;
+  display: none;
+}
+
+.PixelCard:hover .PixelCardImageAfter {
+  display: flex;
+}
+
+.PixelCard:hover .PixelCardImageBefore {
+  display: none;
+}

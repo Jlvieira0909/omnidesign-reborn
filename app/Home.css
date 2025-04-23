@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.MenuContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.BGContainer {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  opacity: 80%;
+  z-index: 1;
+}
+
+.MenuContent {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  width: 80vw;
+}
+
+.ImageCarouselWrapper {
+}
+
+.MagicImageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.MagicImageTitle {
+  margin-top: 40%;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 3em;
+  letter-spacing: 0.02em;
+  text-align: center;
+  width: 60vw;
+  text-transform: uppercase;
+}
+
+.HomeGalleryContainer {
+  height: 80vh;
+}
+
+.HomeCardWrapper:nth-child(2) div {
+  order: 2;
+  text-align: right;
+}
+
+.HomeCardWrapper:nth-child(2) a {
+  order: 1;
+}
+
+.HomeCardWrapper:nth-child(2) .CardTextsContainer {
+  justify-content: right;
+  align-items: flex-end;
+  display: flex;
+}
