@@ -20,4 +20,54 @@
 
 .ProjectsContent {
   z-index: 2;
+  height: 100vh;
+}
+
+.ProjectsGallery {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 5%;
+  z-index: 999999;
+}
+
+.ProjectsGallery img {
+  transition: 0.3s;
+}
+
+.ProjectsGallery img:hover {
+  transform: scale(1.05);
+}
+
+.GalleryImageLandscape {
+  width: 25vw !important;
+  height: 25vh;
+  outline: solid 4px #04f;
+}
+
+.GalleryImageUltraWide {
+  width: 25vw !important;
+  height: 20vh;
+  outline: solid 4px #04f;
+}
+
+.GalleryImageChunky {
+  width: 25vw !important;
+  height: 35vh;
+  outline: solid 4px #04f;
+}
+
+.GalleryImageChunkier {
+  width: 25vw !important;
+  height: 55vh;
+  outline: solid 4px #04f;
+}
+
+.GalleryImagePoster {
+  width: 25vw !important;
+  height: 75vh;
+  outline: solid 4px #04f;
 }

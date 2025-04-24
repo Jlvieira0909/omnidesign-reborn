@@ -3,6 +3,8 @@ import Aurora from "./components/AuroraBG/Aurora.jsx";
 import NavBar from "./components/NavBar/NavBar";
 import HomeCard from "./components/HomeCard/HomeCard";
 
+import Footer from "./components/Footer/Footer";
+
 export default function Home() {
   return (
     <div className="MenuContainer">
@@ -51,6 +53,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Aurora from "../components/AuroraBG/Aurora.jsx";
 import NavBar from "../components/NavBar/NavBar";
 
 import PixelCard from "../components/PixelCard/PixelCard.jsx";
+import Footer from "../components/Footer/Footer";
 
 export default function Contact() {
   return (
@@ -28,7 +29,10 @@ export default function Contact() {
             </div>
             <div className="ContactsContainer">
               <div className="ContactRow">
-                <a href="" className="ContactLink">
+                <a
+                  href="https://www.instagram.com/vfernandoroberto/"
+                  className="ContactLink"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -49,7 +53,10 @@ export default function Contact() {
                 </a>
               </div>
               <div className="ContactRow">
-                <a href="" className="ContactLink">
+                <a
+                  href="https://www.instagram.com/omnidesignbr/"
+                  className="ContactLink"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -70,7 +77,10 @@ export default function Contact() {
                 </a>
               </div>
               <div className="ContactRow">
-                <a href="" className="ContactLink">
+                <a
+                  href="https://www.linkedin.com/in/fernando-vieira-2995b11a0/"
+                  className="ContactLink"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -91,7 +101,10 @@ export default function Contact() {
                 </a>
               </div>
               <div className="ContactRow">
-                <a href="" className="ContactLink">
+                <a
+                  href="https://www.behance.net/fernandovieira42"
+                  className="ContactLink"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -106,7 +119,7 @@ export default function Contact() {
                 </a>
               </div>
               <div className="ContactRow">
-                <a href="" className="ContactLink">
+                <a href="mailto:frvieira00@gmail.com" className="ContactLink">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -148,6 +161,7 @@ export default function Contact() {
           </PixelCard>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

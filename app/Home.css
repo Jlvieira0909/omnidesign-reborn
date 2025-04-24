@@ -65,3 +65,35 @@
   align-items: flex-end;
   display: flex;
 }
+
+@media screen and (max-width: 768px) {
+  .MagicImageTitle {
+    font-size: 1.2em;
+    width: 90%;
+    margin-top: 20%;
+  }
+
+  .MenuContainer {
+    height: 100%;
+  }
+
+  .BGContainer {
+    top: 0;
+  }
+
+  .MenuContent {
+    width: 100vw;
+  }
+
+  .CardTitle {
+    font-size: 1em !important;
+  }
+
+  .CardImage {
+    display: none;
+  }
+
+  .CardTextsContainer {
+    width: 100% !important;
+  }
+}
