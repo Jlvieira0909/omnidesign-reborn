@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 768px) {
   .MagicImageTitle {
-    font-size: 1.2em;
+    font-size: 1.4em;
     width: 90%;
     margin-top: 20%;
   }
@@ -86,7 +86,8 @@
   }
 
   .CardTitle {
-    font-size: 1em !important;
+    font-size: 1.8em !important;
+    letter-spacing: 0.1em;
   }
 
   .CardImage {
@@ -95,5 +96,25 @@
 
   .CardTextsContainer {
     width: 100% !important;
+  }
+
+  .HomeCardWrapper {
+    margin-top: 10%;
+  }
+
+  .LinkButtonWrapper {
+    width: 70% !important;
+  }
+
+  .CardTextLink {
+    font-size: 1.2em !important;
+  }
+
+  .CardText {
+    font-size: 1.3em !important;
+  }
+
+  .FooterContainer {
+    margin-top: 10%;
   }
 }

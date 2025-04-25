@@ -102,19 +102,98 @@
   height: 100% !important;
 }
 
+.PixelCardImageAfter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 1s ease, visibility 1s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
 .PixelCardImageBefore {
   position: absolute;
+  width: 120%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 1s ease, visibility 1s ease;
+  opacity: 1;
+  visibility: visible;
 }
 
 .PixelCardImageAfter {
-  position: absolute;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  width: 90%;
+  height: 70%;
+}
+
+/* Quando passar o mouse, esconde a imagem "before" e mostra a "after" */
+.PixelCard:hover .PixelCardImageBefore {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .PixelCard:hover .PixelCardImageAfter {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  width: 90%;
+  height: 70%;
 }
 
-.PixelCard:hover .PixelCardImageBefore {
-  display: none;
+.pixel-canvas {
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .pixel-card {
+    display: none !important;
+  }
+
+  .ContactCardContainer {
+    width: 95vw;
+    height: 100%;
+    box-shadow: 16px 16px 16px 10px rgba(30, 41, 51, 1);
+  }
+
+  .ContactContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .InfosWrapper {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+  }
+
+  .LabelNameContainer {
+    width: 100%;
+  }
+
+  .NameWrapper {
+    font-size: 0.8em !important;
+  }
+
+  .ActingArea {
+    font-size: 1.6em !important;
+  }
+
+  .ContactLabel {
+    font-size: 1.6em;
+  }
+
+  .ContactLink {
+    width: 100%;
+  }
+
+  .ContactsContainer {
+    gap: 4px;
+  }
+
+  .FooterContainer {
+    margin-top: 20%;
+  }
 }

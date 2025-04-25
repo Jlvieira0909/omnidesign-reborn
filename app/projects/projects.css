@@ -71,3 +71,14 @@
   height: 75vh;
   outline: solid 4px #04f;
 }
+
+@media screen and (max-width: 768px) {
+  .ProjectsGallery {
+    margin-top: 20%;
+    gap: 30px;
+  }
+
+  .ProjectsGallery img {
+    width: 90% !important;
+  }
+}

@@ -31,3 +31,9 @@
 
 .HpmndSignature {
 }
+
+@media screen and (max-width: 768px) {
+  .FooterContainer {
+    font-size: 0.8em !important;
+  }
+}

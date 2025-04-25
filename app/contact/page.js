@@ -156,8 +156,14 @@ export default function Contact() {
             </div>
           </div>
           <PixelCard variant="blue" className="PixelCard">
-            <img className="PixelCardImageBefore"></img>
-            <img className="PixelCardImageAfter"></img>
+            <img
+              className="PixelCardImageBefore"
+              src="/Images/ContactImages/ContactPhoto.png"
+            />
+            <img
+              className="PixelCardImageAfter"
+              src="/Images/ContactImages/OmniLogo.png"
+            />
           </PixelCard>
         </div>
       </div>

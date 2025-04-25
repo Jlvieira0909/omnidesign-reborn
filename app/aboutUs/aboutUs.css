@@ -71,3 +71,47 @@
   font-weight: 600;
   font-size: 2.2em;
 }
+
+@media screen and (max-width: 768px) {
+  .ContextText {
+    font-size: 1.2em !important;
+  }
+
+  .AboutUsWrapper {
+    width: 100%;
+    padding: 0 !important;
+    margin-top: 40%;
+  }
+
+  .AboutUsTitle {
+    width: 95vw;
+    font-size: 1.4em !important;
+  }
+
+  .FooterContainer {
+    position: relative !important;
+    margin-top: 20%;
+    font-size: 0.8em !important;
+  }
+
+  .AboutUsContent {
+    height: 100%;
+  }
+
+  .ListItem {
+    font-size: 1em !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .AboutUsWrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+    margin-top: 50%;
+  }
+
+  .FooterContainer {
+    display: none !important;
+  }
+}
