@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./PixelCard.css";
 
 class Pixel {
@@ -98,9 +98,6 @@ function getEffectiveSpeed(value, reducedMotion) {
   }
 }
 
-/**
- *  You can change/expand these as you like.
- */
 const VARIANTS = {
   default: {
     activeColor: null,
@@ -146,9 +143,15 @@ export default function PixelCard({
   const pixelsRef = useRef([]);
   const animationRef = useRef(null);
   const timePreviousRef = useRef(performance.now());
-  const reducedMotion = useRef(
-    window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  ).current;
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setReducedMotion(
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      );
+    }
+  }, []);
 
   const variantCfg = VARIANTS[variant] || VARIANTS.default;
   const finalGap = gap ?? variantCfg.gap;
@@ -201,7 +204,7 @@ export default function PixelCard({
     animationRef.current = requestAnimationFrame(() => doAnimate(fnName));
     const timeNow = performance.now();
     const timePassed = timeNow - timePreviousRef.current;
-    const timeInterval = 1000 / 60; // ~60 FPS
+    const timeInterval = 1000 / 60;
 
     if (timePassed < timeInterval) return;
     timePreviousRef.current = timeNow - (timePassed % timeInterval);
@@ -253,7 +256,7 @@ export default function PixelCard({
       cancelAnimationFrame(animationRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [finalGap, finalSpeed, finalColors, finalNoFocus]);
+  }, [finalGap, finalSpeed, finalColors, finalNoFocus, reducedMotion]);
 
   return (
     <div
