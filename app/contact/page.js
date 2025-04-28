@@ -25,7 +25,7 @@ export default function Contact() {
                 <h1 className="FirstName">Fernando</h1>
                 <h1 className="SurName">Roberto Vieira</h1>
               </div>
-              <h2 className="ActingArea">Designer Projetista</h2>
+              <h2 className="ActingArea">Designer Gráfico</h2>
             </div>
             <div className="ContactsContainer">
               <div className="ContactRow">

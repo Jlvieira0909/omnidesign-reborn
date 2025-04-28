@@ -24,33 +24,38 @@ export default function AboutUs() {
           </h1>
           <div className="TextsContainer">
             <span className="ContextText">
-              Me chamo Fernando Roberto, sou Bacharel em Design Gráfico com MBA
-              em Marketing. Possuo vasta experiência nas áreas de Design,
-              Comercial, Marketing e Engenharia. Sou especializado em prestar
-              suporte estratégico à rede de vendas, integrando eficientemente
-              departamentos para otimizar operações e resultados. Minha
-              trajetória profissional inclui:
+              Fernando Vieira é Bacharel em Design Gráfico e possui MBA em
+              Marketing. Com ampla experiência nas áreas de Design, Comercial,
+              Marketing e Engenharia, é especializado em oferecer suporte
+              estratégico à rede de vendas, promovendo a integração eficiente
+              entre departamentos para otimizar operações e maximizar
+              resultados.
+            </span>
+            <span className="ContextText">
+              Ao longo de sua trajetória profissional, Fernando atuou em
+              diversas frentes, incluindo:
             </span>
             <div className="TextList">
               <h1 className="ListItem">
-                * Desenvolvimento de materiais diversos de Design Gráfico.
+                * Desenvolvimento de materiais gráficos para diferentes
+                finalidades.
               </h1>
               <h1 className="ListItem">
-                * Criação de materiais de divulgação e estratégias de marketing
-                para promover produtos e serviços.
+                * Criação de campanhas e materiais de divulgação voltados para a
+                promoção de produtos e serviços.
               </h1>
               <h1 className="ListItem">
-                * Elaboração de projetos inovadores na área de Comunicação
-                Visual de Frotas, garantindo identidade visual e eficiência
-                operacional.
+                * Elaboração de projetos inovadores de Comunicação Visual para
+                Frotas, assegurando a padronização da identidade visual e a
+                eficiência operacional.
               </h1>
             </div>
             <span className="ContextText">
-              Sou apaixonado por colaborar em projetos que exigem criatividade,
-              precisão técnica e foco no cliente. Meu objetivo é continuar
+              Apaixonado por desafios que combinam criatividade, precisão
+              técnica e foco no cliente, Fernando tem como objetivo seguir
               contribuindo para o crescimento sustentável e a excelência
-              operacional em organizações dos setores Industrial, Comercial,
-              Transportes e Serviços.
+              operacional de empresas dos setores Industrial, Comercial, de
+              Transportes e de Serviços.
             </span>
           </div>
         </div>
